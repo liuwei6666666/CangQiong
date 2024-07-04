@@ -26,4 +26,6 @@ public interface EmployeeMapper {
 
     //因为涉及到动态sql，使用注解不方便，所以现在采用xml方式进行查询。
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    void update(Employee employee);
 }
